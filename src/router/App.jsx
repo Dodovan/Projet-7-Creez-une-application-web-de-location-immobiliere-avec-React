@@ -5,17 +5,22 @@ import Footer from "../components/Footer";
 
 import Home from "../pages/Home";
 import About from "../pages/About"
+import Logement from "../pages/Logement";
 
-export default function App() {
+ function App() {
   return (
     <div>
       <Header/>
       <Routes>
         <Route exact path="/" element={<Home />}/>
         <Route path="/about" element={<About />} />
+        <Route path="/logement" element={<Logement />} />
+
       </Routes>
       {/* <Footer/> */}
     </div>
   );
 }
+
+export default App;
 
