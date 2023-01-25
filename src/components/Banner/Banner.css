@@ -1,0 +1,97 @@
+
+.Banner{
+position: absolute;
+    width: 1240px;
+    height: 223px;
+    top: -55px;
+ 
+
+}
+.Banner__img{
+    
+    position: absolute;
+    width: 1240px;
+    height: 223px;
+    background: url('../../assets/IMG_banner.png');
+border-radius: 25px;
+mix-blend-mode: darken;
+filter:brightness(0.55);
+}
+.Banner__texte{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 142.6%;
+color: #FFFFFF;
+position: relative;
+    top: 140px;
+    z-index: 1;
+}
+/* .Banner{
+    position: absolute;
+    width: 1240px;
+    height: 223px;
+    left: 100px;
+    top: 171px;    
+}
+.Banner__Texte{
+    position: absolute;
+    left: 25.9%;
+    right: 25.14%;
+    top: 24.32%;
+    bottom: 69.04%;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 142.6%;
+
+    
+    display: flex;
+    align-items: flex-end;
+    
+    color: #FFFFFF;
+}
+.Banner__img{
+position: absolute;
+width: 1240px;
+height: 223px;
+left: 100px;
+top: 171px;
+}
+.Banner__img--background{
+    position: absolute;
+width: 1240px;
+height: 223px;
+left: 100px;
+top: 171px;
+
+background: #000000;
+mix-blend-mode: darken;
+opacity: 0.3;
+border-radius: 25px;
+}
+.Banner__img--img{
+    position: absolute;
+    width: 1278px;
+    height: 1933px;
+    left: 100px;
+    top: -573px;
+}
+.Banner__img--background2{
+    position: absolute;
+width: 1240px;
+height: 223px;
+left: 100px;
+top: 171px;
+
+background: #F7F7F7;
+border-radius: 25px;
+} */

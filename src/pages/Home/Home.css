@@ -1,0 +1,15 @@
+body{
+    position: absolute;
+width: 1240px;
+height: 1095px;
+left: 100px;
+top: 171px;
+
+}
+html{
+    position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #FFFFFF;
+}

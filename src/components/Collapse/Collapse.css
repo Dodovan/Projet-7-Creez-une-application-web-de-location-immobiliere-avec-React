@@ -1,0 +1,41 @@
+.accordion {
+    max-width: 1023px;
+
+  }
+  .accordion-item {
+    list-style: none;
+    margin-bottom: 31px;
+  }
+  .accordion-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    background: #FF6060;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+    border-radius: 5px;
+    height: 47px;
+  }
+  .accordion-toggle:hover {
+    background-color: #ddd;
+  }
+  .accordion-toggle h3 {
+    margin: 0;
+  }
+  .accordion-content {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #FF6060;
+    background: #F7F7F7;
+    border-radius: 5px
+  }
