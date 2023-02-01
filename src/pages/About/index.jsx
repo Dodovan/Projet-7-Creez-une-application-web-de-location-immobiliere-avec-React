@@ -5,8 +5,8 @@ function About () {
     return (
 
         <ul className="accordion">
-          {accordionData.map(({ heading, content, id }) => (
-            <Accordion heading={heading} content={content} key={id} />
+          {accordionData.map(({ heading,id,content}) => (
+            <Accordion key={id} heading={heading} content={content}  />
           ))}
         </ul>
 
@@ -15,6 +15,10 @@ function About () {
   }
   
   export default About
+
+  // {accordionData.map(({ heading, content, id }) => (
+  //   <Accordion heading={heading} content={content} key={id} />
+  // ))}
 
 const accordionData = [
     {
