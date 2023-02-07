@@ -2,7 +2,7 @@
 import logo from '../../assets/logo_footer.png'
 import './Footer.css'
 
-function Footer() {
+function Footer({type}) {
 
     return (
         <footer>
@@ -13,6 +13,7 @@ function Footer() {
                 © 2020 Kasa. All rights reserved
             </div>
         </footer>
+        
     )
   }
   

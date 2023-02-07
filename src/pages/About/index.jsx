@@ -1,15 +1,18 @@
 import React from "react";
 // import { accordionData } from "../../components/Collapse";
 import Accordion from "../../components/Collapse";
+import Banner from "../../components/Banner";
+import './About.css'
 function About () {
     return (
-
-        <ul className="accordion">
+      <div>
+        <Banner type={2}/>
+        <ul className="accordion-about">
           {accordionData.map(({ heading,id,content}) => (
             <Accordion key={id} heading={heading} content={content}  />
           ))}
         </ul>
-
+        </div>
       );
 
   }

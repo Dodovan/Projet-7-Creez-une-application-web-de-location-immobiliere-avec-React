@@ -1,9 +1,8 @@
 
 .Banner{
-position: absolute;
+
     width: 1240px;
     height: 223px;
-    top: -55px;
  
 
 }
@@ -12,10 +11,25 @@ position: absolute;
     position: absolute;
     width: 1240px;
     height: 223px;
+    margin-top: -70px;
     background: url('../../assets/IMG_banner.png');
 border-radius: 25px;
 mix-blend-mode: darken;
-filter:brightness(0.55);
+filter:brightness(0.65);
+
+}
+.Banner__img2{
+    
+    position: absolute;
+    width: 1240px;
+    height: 223px;
+
+    background: url('../../assets/IMG_banner2.png');
+border-radius: 25px;
+mix-blend-mode: darken;
+opacity: 1.3;
+
+
 }
 .Banner__texte{
     text-align: center;
@@ -30,68 +44,29 @@ font-size: 48px;
 line-height: 142.6%;
 color: #FFFFFF;
 position: relative;
-    top: 140px;
+    top: 70px;
     z-index: 1;
 }
-/* .Banner{
-    position: absolute;
-    width: 1240px;
-    height: 223px;
-    left: 100px;
-    top: 171px;    
-}
-.Banner__Texte{
-    position: absolute;
-    left: 25.9%;
-    right: 25.14%;
-    top: 24.32%;
-    bottom: 69.04%;
+@media all and (max-width:768px){
+ .Banner{
+    width: 90%;
+ }
+ .Banner__img{
+    width: 90%;
+    height: 111px;
+    background: url('../../assets/IMG_banner_mobile.png');
+    margin-top: -30px;
+ }
+ .Banner__texte{
+    position: relative;
+    width: 90%;
+    font-size: 24px;
+    margin-top: -50px;
     
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 142.6%;
-
-    
+ }
+ .wrap-Banner{
     display: flex;
-    align-items: flex-end;
-    
-    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+ }
 }
-.Banner__img{
-position: absolute;
-width: 1240px;
-height: 223px;
-left: 100px;
-top: 171px;
-}
-.Banner__img--background{
-    position: absolute;
-width: 1240px;
-height: 223px;
-left: 100px;
-top: 171px;
-
-background: #000000;
-mix-blend-mode: darken;
-opacity: 0.3;
-border-radius: 25px;
-}
-.Banner__img--img{
-    position: absolute;
-    width: 1278px;
-    height: 1933px;
-    left: 100px;
-    top: -573px;
-}
-.Banner__img--background2{
-    position: absolute;
-width: 1240px;
-height: 223px;
-left: 100px;
-top: 171px;
-
-background: #F7F7F7;
-border-radius: 25px;
-} */

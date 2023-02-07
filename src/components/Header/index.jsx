@@ -10,8 +10,9 @@ function Header() {
                 <img src={logo} alt="logo" />
             </div>
             <nav className='nav'>
-                <Link className='nav__About' to="/about">A propos</Link>
                 <Link className='nav__Home'to="/">Accueil </Link>
+                <Link className='nav__About' to="/about">A propos</Link>
+                
             </nav>
         </div>
     )

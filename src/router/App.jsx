@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import './Router.css'
 
 import Home from "../pages/Home";
 import About from "../pages/About"
@@ -10,7 +11,7 @@ import Logement from "../pages/Logement";
 
  function App() {
   return (
-    <div>
+    <div className="Page">
 
       <Header/>
       <Routes>
@@ -20,7 +21,7 @@ import Logement from "../pages/Logement";
 
       </Routes>
 
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

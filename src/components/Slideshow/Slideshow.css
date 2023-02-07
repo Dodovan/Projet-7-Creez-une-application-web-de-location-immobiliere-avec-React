@@ -13,3 +13,12 @@
     background: #803838;
     text-align: center;
   }
+  slide{
+    width: 1240px;
+  }
+  .react-slideshow-container{
+    width: 1240px;
+  }
+  path{
+    width: 100px;
+  }

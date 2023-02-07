@@ -1,6 +1,7 @@
 import logements from "../../data/logements"
 import { useParams } from 'react-router-dom'
 import Slideshow from "../../components/Slideshow/Slideshow"
+import Card from "../../components/Card";
 
 
 var arrayid = [];
@@ -22,21 +23,22 @@ const Logement = () => {
 
     return (
         <div>
-            {/* <img alt="aaaaaaa" src={logements[found].cover} /> */}
-            {/* <img src={logements[found].pictures[3]} alt="aaa" /> */}
-            <Slideshow image1={logements[found].pictures} />
-            {/* {logements[found].pictures.map((picture)=> (
-            <div className="each-slide">
-            <img src={picture} alt="aaa" />
+            {/* <img alt="aaaaaaa" src={logements[found].pictures[1]} /> */}
 
-        </div>
-                ))} */}
+            <Card type={2} Logement={logements[found]}/>
+
+
             
             
         </div>
     );
 }
+        //     {/* {logements[found].pictures.map((picture)=> (
+        //     <div className="each-slide">
+        //     <img src={picture} alt="aaa" />
 
+        // </div>
+        //         ))} */}
 // image1={logements[found].pictures[1]} image2={logements[found].pictures[1]}
 // function Logement () {
 

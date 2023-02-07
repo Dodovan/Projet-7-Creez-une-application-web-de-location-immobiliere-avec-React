@@ -1,16 +1,17 @@
 import Banner from "../../components/Banner"
+// import badou from "../../components/Banner"
 import Card from "../../components/Card"
 import './Home.css'
 import logements from "../../data/logements"
+import Footer from "../../components/Footer"
 
 function Home() {
   return(
-    <div>
-      
-    <Banner/>
+    <div className="homepage">
+    <Banner type={1}/>
     <ul className="listlogements">
         {logements.map(({id,title,cover})=> (
-        <Card key={id} id={id} cover={cover} title={title}   />
+        <Card  type={1} key={id} id={id} cover={cover} title={title}   />
       ))}
     </ul>
     </div>
