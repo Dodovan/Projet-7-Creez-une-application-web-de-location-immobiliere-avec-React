@@ -9,7 +9,7 @@ import Card2 from './Card2';
 
 function Card ({id,title,cover,Logement,type}) {
     return(
-        <div >
+        <div className='Cardwrapper'>
             {type===1?(
                 <Card1 id={id} cover={cover}title={title}/>
                 ):(

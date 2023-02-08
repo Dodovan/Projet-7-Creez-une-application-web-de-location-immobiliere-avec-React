@@ -9,9 +9,9 @@ function Header() {
             <div className='logo'>
                 <img src={logo} alt="logo" />
             </div>
-            <nav className='nav'>
-                <Link className='nav__Home'to="/">Accueil </Link>
-                <Link className='nav__About' to="/about">A propos</Link>
+            <nav className='navi'>
+                <Link className='navi__Home'to="/">Accueil </Link>
+                <Link className='navi__About' to="/about">A propos</Link>
                 
             </nav>
         </div>

@@ -18,7 +18,31 @@
   }
   .react-slideshow-container{
     width: 1240px;
+    background: none;
   }
   path{
     width: 100px;
   }
+button.nav {
+    width: 46px;
+    background: none;
+    border: '0px';
+    border-color: transparent;
+    margin-right: 20px;
+    
+ }
+ .react-slideshow-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 415px;
+  border-radius: 25px;
+}
+.react-slideshow-container img{
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+}
+.react-slideshow-container svg{
+  height: 100px;
+}

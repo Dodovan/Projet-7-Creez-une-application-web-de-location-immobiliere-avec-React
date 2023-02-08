@@ -1,0 +1,91 @@
+.Card2wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.topofcard2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title__location__tags{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+
+}
+.location{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    margin-top: -40px;
+}
+.tag{
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+.host__rating{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+.host{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.Host__name{
+    color: #FF6060;
+    width: min-content;
+    font-size: 18px;
+    text-align: end;
+    padding-right: 10px;
+
+
+}
+.Host__picture{
+    width: 64px;
+    height: 64px;
+}
+.Host__picture img{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+}
+.rating{
+
+}
+.collapsegroup{
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+}
+.collapsegroup__description{
+    width: 46%;
+}
+.collapsegroup__equipment{
+    width: 46%;
+}

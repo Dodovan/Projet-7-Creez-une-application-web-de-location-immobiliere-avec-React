@@ -11,21 +11,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em;
+    align-items: center;
     background: #FF6060;
+
+    padding-left: 20px;
+    padding-right: 15px;
 
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 142.6%;
     color: #FFFFFF;
-    border-radius: 5px;
-    height: 47px;
+    border-radius: 10px;
+    height: 52px;
   }
-  .accordion-toggle:hover {
+  /* .accordion-toggle:hover {
     background-color: #ddd;
-  }
+  } */
   .accordion-toggle h3 {
     margin: 0;
   }

@@ -8,7 +8,7 @@
     margin-top: 40px;
     margin-bottom: 63px;
 }
-.nav{
+.navi{
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -22,10 +22,10 @@
     justify-content: space-between;
     text-decoration: none;
 }
-.nav__About{
+.navi__About{
     color: #FF6060;
 }
-.nav__Home{
+.navi__Home{
     color: #FF6060; 
 }
 @media all and (max-width:768px){
