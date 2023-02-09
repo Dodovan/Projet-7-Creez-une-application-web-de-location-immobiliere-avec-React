@@ -75,9 +75,6 @@ h1{
     height: 64px;
     border-radius: 100%;
 }
-.rating{
-
-}
 .collapsegroup{
     width: 1240px;
     display: flex;
@@ -89,3 +86,70 @@ h1{
 .collapsegroup__equipment{
     width: 46%;
 }
+
+@media all and (max-width:768px){
+    .collapsegroup{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .collapsegroup__description {
+        width: 100%;
+    }
+    .collapsegroup__equipment{
+        width: 100%;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .location{
+        font-size: 14px;
+        margin-top: -20px;
+    }
+    .tag{
+        font-size: 10px;
+    }
+    .title__location__tags{
+        width: 100%;
+    }
+    .topofcard2{
+        flex-direction: column;
+    }
+    .host__rating{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        margin-top: -20px;
+    }
+    .host{
+        order: 2;
+        
+    }
+    .Host__name{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+    .Host__picture img{
+        width: 32px;
+        height: 32px;
+    }
+    .Host__picture{
+        display: flex;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+    }
+    .rating{
+        order: 1;
+
+    }
+    .rating img{
+        height: 15px;
+        width: 15px;
+    }
+  
+  }

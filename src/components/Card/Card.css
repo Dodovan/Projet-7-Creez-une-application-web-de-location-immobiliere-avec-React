@@ -30,8 +30,8 @@ h2{
         width: 100%;
         height: 255px;
     }
-
+    .Cardwrapper{
+        width: 100%;
+    }
 }
-/* .Cardwrapper{
-    width: 1240px;
-} */
+

@@ -8,6 +8,7 @@ import './Router.css'
 import Home from "../pages/Home";
 import About from "../pages/About"
 import Logement from "../pages/Logement";
+import Error from "../pages/Error/Error";
 
  function App() {
   return (
@@ -18,7 +19,7 @@ import Logement from "../pages/Logement";
         <Route exact path="/" element={<Home />}/>
         <Route path="/about" element={<About />} />
         <Route path="/logement/:id" element={<Logement />} />
-
+        <Route path="/error" element={<Error />} />
       </Routes>
 
       <Footer/>

@@ -2,6 +2,7 @@ import logements from "../../data/logements"
 import { useParams } from 'react-router-dom'
 import Slideshow from "../../components/Slideshow/Slideshow"
 import Card from "../../components/Card";
+import './Logement.css'
 
 
 var arrayid = [];
@@ -22,7 +23,7 @@ const Logement = () => {
 
 
     return (
-        <div>
+        <div className="pageLogement">
             {/* <img alt="aaaaaaa" src={logements[found].pictures[1]} /> */}
 
             <Card type={2} Logement={logements[found]}/>

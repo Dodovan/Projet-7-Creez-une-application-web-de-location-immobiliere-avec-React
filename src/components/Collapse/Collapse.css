@@ -31,6 +31,7 @@
   } */
   .accordion-toggle h3 {
     margin: 0;
+    font-weight: 500;
   }
   .accordion-content {
     font-family: 'Montserrat';
@@ -41,4 +42,17 @@
     color: #FF6060;
     background: #F7F7F7;
     border-radius: 5px
+  }
+  @media all and (max-width:768px){
+    .accordion-toggle {
+      font-size: 13px;
+      height: 30px;
+    }
+    .accordion-toggle img{
+      height: 9px;
+      width: 15px;
+    }
+    .accordion-content {
+      font-size: 12px;
+    }
   }
