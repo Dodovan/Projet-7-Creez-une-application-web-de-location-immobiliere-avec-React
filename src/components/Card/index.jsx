@@ -17,7 +17,7 @@ function Card ({id,title,cover,Logement,type}) {
             )
             
             }
-         </div>
+          </div> 
 )
   }
   

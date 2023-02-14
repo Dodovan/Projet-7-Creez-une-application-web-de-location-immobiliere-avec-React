@@ -32,6 +32,8 @@ h2{
     }
     .Cardwrapper{
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 

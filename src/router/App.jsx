@@ -18,8 +18,8 @@ import Error from "../pages/Error/Error";
       <Routes>
         <Route exact path="/" element={<Home />}/>
         <Route path="/about" element={<About />} />
-        <Route path="/logement/:id" element={<Logement />} />
-        <Route path="/error" element={<Error />} />
+        <Route path="/logement/:id" element={<Logement />}/>
+        <Route path="*" element={<Error />} />
       </Routes>
 
       <Footer/>

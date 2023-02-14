@@ -5,7 +5,9 @@ function Error () {
         <div className='pageError'>
             <div className='Error__404'>404</div>
             <div className='Error__description'>Oups! La page que vous demandez n'existe pas.</div>
-            <Link to={`/`}> Retourner sur la page d'accueil</Link>
+            <div className='Error__link'>
+                <Link to={`/`}> Retourner sur la page d'accueil</Link>
+            </div>
 
         </div>
       );

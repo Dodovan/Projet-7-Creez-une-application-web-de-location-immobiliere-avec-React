@@ -47,23 +47,16 @@ import React, { Component } from 'react'
 //     )
 //   }
 // }
-function Banner ({type}){
+function Banner ({BannerTexte,BannerImg}){
     return (
 
         <div className='wrap-Banner'>
-            {type===1?(
                 <div className='Banner'>
-            <div className='Banner__texte'>
-                Chez vous, partout et ailleurs
-            </div>
-            <div className='Banner__img'></div>
-            </div>):(
-                <div className='Banner'>
-                    <div className='Banner__img2'></div>
-                </div>
-            )
-            
-            }
+                    <div className='Banner__texte'>
+                        {BannerTexte}   
+                    </div>
+                    <div className='Banner__img'><img src={BannerImg} alt="logo" /></div>
+            </div>    
          </div>
         
     )

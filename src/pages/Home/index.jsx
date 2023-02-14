@@ -4,11 +4,12 @@ import Card from "../../components/Card"
 import './Home.css'
 import logements from "../../data/logements"
 import Footer from "../../components/Footer"
+import IMG_banner from '../../assets/Img_Banner_Home.png'
 
 function Home() {
   return(
     <div className="homepage">
-    <Banner type={1}/>
+    <Banner BannerImg={IMG_banner} BannerTexte={"Chez vous, partout et ailleurs"}/>
     <ul className="listlogements">
         {logements.map(({id,title,cover})=> (
         <Card  type={1} key={id} id={id} cover={cover} title={title}   />

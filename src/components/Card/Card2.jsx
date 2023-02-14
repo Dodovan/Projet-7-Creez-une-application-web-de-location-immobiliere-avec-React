@@ -43,7 +43,7 @@ function Card2 ({Logement}){
                 <Accordion key={Logement.id} heading="Description" content={Logement.description}  />
             </div>
             <div className='collapsegroup__equipment'>
-                <Accordion key={Logement.id} heading="Equipement" content={Logement.equipments}  />
+                <Accordion key={Logement.id} heading="Equipement" content={Logement.equipments.map((equipement, index)=><li key={index}>{equipement}</li>)}  />
             </div>
         </div>
     </div>

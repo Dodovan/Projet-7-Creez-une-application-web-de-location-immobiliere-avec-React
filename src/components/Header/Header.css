@@ -32,10 +32,11 @@
     .Header{
         width: 90%;
         height: 47px;
+        margin-bottom: 10px;
     }
     .navi{
         width: 150px;
-        font-size: 15px;
+        font-size: 17px;
         line-height: 17.11px;
         /* text-align: right; */
 

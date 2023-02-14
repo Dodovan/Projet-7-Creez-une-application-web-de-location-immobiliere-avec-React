@@ -46,6 +46,26 @@ button.nav {
 .react-slideshow-container svg{
   height: 100px;
 }
+.indicators{
+  position: relative;
+  bottom: 80px;
+}
+.indicator {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 1px;
+  opacity: 0;
+  font-size: 18px;
+}
+
+.indicator.active {
+  color: #fff;
+  background: transparent;
+  opacity: 1;
+}
 @media all and (max-width:768px){
   .react-slideshow-container{
     width: 100%;
