@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Collapse.css";
+import "./Accordion.css";
 import vectordown from '../../assets/Vector_down.png'
 import vectorup from '../../assets/Vector_up.png'
 

@@ -7,7 +7,7 @@
     font-family: 'Montserrat';
     font-weight: 500;
     position: relative;
-    padding-bottom: 120px;
+    padding-bottom: 209px;
 }
 #root{
     display: flex;
@@ -18,17 +18,12 @@
     
     }
 body{
-display: flex;
-width: 100%;
-justify-content: center;
-margin: 0px;
-
-
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
 }
 html{
-
-width: 100%;
-
-
-background: #FFFFFF;
+    width: 100%;
+    background: #FFFFFF;
 }

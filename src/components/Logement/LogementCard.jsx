@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
-function Card1 ({id,title,cover}){
+function LogementCard ({id,title,cover}){
     return(
     <div className="card">
     <Link to={`/logement/${id}`}>
 
         <img alt={`cover of ${title}`} src={cover} />
+        <div className='gradient'></div>
         <h2>{title}</h2>
         
 
@@ -12,4 +13,4 @@ function Card1 ({id,title,cover}){
     </div>
     )
 }
-export default Card1
+export default LogementCard

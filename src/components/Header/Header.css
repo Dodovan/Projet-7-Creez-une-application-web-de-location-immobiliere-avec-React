@@ -3,10 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
+    width: 90%;
+    max-width: 1240px;
     height: 68px;
     margin-top: 40px;
-    margin-bottom: 63px;
+    margin-bottom: 50px;
 }
 .navi{
 
@@ -28,7 +29,8 @@
 .navi__Home{
     color: #FF6060; 
 }
-@media all and (max-width:768px){
+@media all and (max-width:991px) and (min-width:769px)
+{
     .Header{
         width: 90%;
         height: 47px;
@@ -38,6 +40,30 @@
         width: 150px;
         font-size: 17px;
         line-height: 17.11px;
+        /* text-align: right; */
+        align-items: center;
+        z-index: 10;
+
+
+    }
+    .Header img{
+        width: 145px;
+        height: 47px;
+    }
+}
+@media all and (max-width:768px){
+    .Header{
+        width: 90%;
+        height: 47px;
+        margin-bottom: 10px;
+    }
+    .navi{
+        z-index: 10;
+        width: 150px;
+        font-size: 17px;
+        line-height: 17.11px;
+        align-items: center;
+
         /* text-align: right; */
 
 

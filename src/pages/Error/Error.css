@@ -11,12 +11,43 @@
 }
 .Error__description{
     font-size: 36px;
-    /* color: #FF6060; */
     padding-top: 30px;
     padding-bottom: 250px;
 }
 .Error__link a{
     font-size: 18px;
     color: #FF6060;
-    /* text-decoration: none; */
+}
+@media all and (max-width:991px) and (min-width:769px)
+{
+    .pageError{
+        width: 90%;
+    }
+    .Error__404{
+        padding-top: 60px;
+        font-size: 200px;
+    }
+    .Error__description{
+        font-size: 22px;
+        padding-bottom: 90px;
+    }
+}
+@media all and (max-width:768px){
+    .pageError{
+        width: 90%;
+    }
+    .Error__404{
+        font-size: 96px;
+        padding-top: 180px;
+    }
+    .Error__description{
+        font-size: 18px;
+        padding-bottom: 30px;
+        padding-bottom: 90px;
+    }
+    .Error__link a{
+        font-size: 14px;
+        
+    }
+
 }

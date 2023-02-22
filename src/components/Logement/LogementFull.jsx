@@ -1,12 +1,11 @@
-import { Link } from 'react-router-dom'
-import Slideshow from "../../components/Slideshow/Slideshow"
+import Slideshow from "../Slideshow/Slideshow"
 import star from '../../assets/star.png'
 import emptyStar from '../../assets/emptyStar.png'
-import Accordion from "../../components/Collapse";
-import './Card2.css'
+import Accordion from "../Accordion/Accordion";
 
 
-function Card2 ({Logement}){
+
+function LogementFull ({Logement}){
     const range = [1,2,3,4,5]
     const numberemptyStar = 5 - Logement.rating
     return(
@@ -43,10 +42,10 @@ function Card2 ({Logement}){
                 <Accordion key={Logement.id} heading="Description" content={Logement.description}  />
             </div>
             <div className='collapsegroup__equipment'>
-                <Accordion key={Logement.id} heading="Equipement" content={Logement.equipments.map((equipement, index)=><li key={index}>{equipement}</li>)}  />
+                <Accordion key={Logement.id} heading="Equipement" content= { Logement.equipments.map((equipement, index)=><div key={index}>{equipement}</div>) }  />
             </div>
         </div>
     </div>
     )
 }
-export default Card2
+export default LogementFull

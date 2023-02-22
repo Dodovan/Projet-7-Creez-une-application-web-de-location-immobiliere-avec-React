@@ -1,7 +1,18 @@
-
+.pageLogement{
+    width: 90%;
+    max-width: 1240px;
+}
+@media all and (max-width:992px){
+    .pageLogement{
+        width: 90%;
+    }
+}
 @media all and (max-width:768px){
     .pageLogement{
         width: 90%;
+    }
+    .pageLogement>.Cardwrapper{
+        width: 100%;
     }
   
   }

@@ -27,6 +27,19 @@ footer{
 
 
 }
+@media all and (max-width:991px) and (min-width:769px)
+{
+    .footer{
+        height: 209px;
+    }
+    .footer__texte{
+        font-size: 12px ;
+    }
+    .footer__logo{
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+}
 @media all and (max-width:768px){
     .footer{
         height: 209px;
