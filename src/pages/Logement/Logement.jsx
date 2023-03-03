@@ -9,29 +9,25 @@ import React, { useEffect } from 'react';
 var arrayid = [];
 var i = 0;
 logements.forEach(element => {
-
     arrayid[i]= logements[i].id;
     i++;
 });
 
 function Logement ()  {
     const id = useParams()
-    console.log(id.id)
-    console.log(arrayid)
-    const found = arrayid.indexOf(id.id)
-    console.log(found)
-    const navigate = useNavigate()  
+    const idfound = arrayid.indexOf(id.id)
+    const navigate = useNavigate()
+    // Si l'id  passé dans l'url ne correspond pas a un logement alors je renvoie sur la page d'erreur
     useEffect(() => {
-    if(found === -1){
+    if(idfound === -1){
             navigate('/error')
-            console.log("it work")
-        }
-        
+        }        
     })
-    if (found !== -1){
+    // sinon je renvoie sur la page du logement
+    if (idfound !== -1){
     return (
         <div className="pageLogement">
-            <Card type={2} Logement={logements[found]}/>            
+            <Card type={"Full"} Logement={logements[idfound]}/>            
         </div>
     );
     }

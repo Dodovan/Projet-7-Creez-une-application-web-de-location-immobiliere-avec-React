@@ -12,7 +12,6 @@ import Error from "../pages/Error/Error";
  function Router() {
   return (
     <div className="Page">
-
       <Header/>
       <Routes>
         <Route exact path="/" element={<Home />}/>

@@ -2,6 +2,7 @@ import Accordion from "../../components/Accordion/Accordion";
 import Banner from "../../components/Banner/Banner";
 import './About.css'
 import IMG_banner_about from '../../assets/IMG_banner2.png'
+
 function About () {
     return (
       <div id="page_about">
@@ -11,7 +12,7 @@ function About () {
             <Accordion key={id} heading={heading} content={content}  />
           ))}
         </ul>
-        </div>
+      </div>
     );
 }
 export default About

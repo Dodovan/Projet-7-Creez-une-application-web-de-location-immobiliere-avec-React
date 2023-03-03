@@ -1,4 +1,3 @@
-
 .accordion-about{
     width: 85%;
     padding-inline-start: 0px;
@@ -7,7 +6,6 @@
 }
 #page_about{
     max-width: 1240px;
-
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -16,7 +14,6 @@
 #page_about > .wrap-Banner > .Banner{
     position: relative;
     z-index: 0;
-
 }
 #page_about > .wrap-Banner > .Banner > .Banner__texte{
         position: absolute;
@@ -28,8 +25,6 @@
         border-radius: 25px;
         width: 100%;
         height: 100%;
-        /* width: 340px;
-        height: 340px; */
         z-index: 10;
 }
 @media all and (min-width:992px){
@@ -47,7 +42,6 @@
     }
     #page_about >.wrap-Banner img{
         height: 223px;
-
     }
     #page_about >.wrap-Banner >{
         height: 223px;
@@ -57,14 +51,12 @@
     }
     #page_about >.wrap-Banner >.Banner>.Banner__img{
         height: 223px;
-
     }
 
 }
 @media all and (max-width:768px){
     #page_about >.wrap-Banner img{
         height: 223px;
-
     }
     #page_about >.wrap-Banner >{
         height: 223px;

@@ -18,6 +18,9 @@
     font-size: 18px;
     color: #FF6060;
 }
+.Error__link{
+    padding-bottom: 159px;
+}
 @media all and (max-width:991px) and (min-width:769px)
 {
     .pageError{
@@ -44,10 +47,9 @@
         font-size: 18px;
         padding-bottom: 30px;
         padding-bottom: 90px;
+        text-align: center;
     }
     .Error__link a{
-        font-size: 14px;
-        
+        font-size: 14px; 
     }
-
 }

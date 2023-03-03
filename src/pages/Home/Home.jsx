@@ -9,8 +9,8 @@ function Home() {
     <div className="homepage">
     <Banner BannerImg={IMG_banner} BannerTexte={"Chez vous, partout et ailleurs"}/>
     <ul className="listlogements">
-        {logements.map(({id,title,cover})=> (
-        <Card  type={1} key={id} id={id} cover={cover} title={title}   />
+      {logements.map((Logement)=> (
+        <Card  type={"Card"} Logement={Logement} key={Logement.id}   />
       ))}
     </ul>
     </div>

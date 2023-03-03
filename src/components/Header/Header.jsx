@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom'
+
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png'
+// import React, { useState, useEffect } from 'react';
 import './Header.css'
 
 function Header() {
@@ -9,8 +11,8 @@ function Header() {
                 <img src={logo} alt="logo" />
             </div>
             <nav className='navi'>
-                <Link className='navi__Home'to="/">Accueil </Link>
-                <Link className='navi__About' to="/about">A propos</Link>       
+                <NavLink to="/" className={({ isActive }) => (isActive ? 'nav__active' : 'nav__inactive')}>Accueil</NavLink>    
+                <NavLink to="/about" className={({ isActive }) => (isActive ? 'nav__active' : 'nav__inactive')}>A propos</NavLink>     
             </nav>
         </div>
     )

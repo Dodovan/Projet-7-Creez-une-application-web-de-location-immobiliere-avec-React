@@ -8,7 +8,7 @@ const Accordion = ({ heading, content}) => {
   return (
     <li className="accordion-item" >
       <div className="accordion-toggle" onClick={() => setIsActive(!isActive)}>
-        <h3>{heading}</h3><span>{isActive ? <img src={vectorup} alt="aa" /> : <img src={vectordown} alt="aa" /> }</span>
+        <h3>{heading}</h3><span>{isActive ? <img src={vectorup} alt="Masquage du contenu" /> : <img src={vectordown} alt="affichage du contenu" /> }</span>
       </div>
       {isActive && <div className="accordion-content">{content}</div>}
     </li>

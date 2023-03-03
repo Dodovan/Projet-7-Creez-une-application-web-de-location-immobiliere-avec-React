@@ -1,19 +1,21 @@
 .pageLogement{
     width: 90%;
     max-width: 1240px;
+    margin-top: -20px;
 }
 @media all and (max-width:992px){
     .pageLogement{
         width: 90%;
+        margin-top: 0px;
     }
 }
 @media all and (max-width:768px){
     .pageLogement{
         width: 90%;
+        margin-top: 20px;
     }
     .pageLogement>.Cardwrapper{
         width: 100%;
     }
-  
-  }
+}
 

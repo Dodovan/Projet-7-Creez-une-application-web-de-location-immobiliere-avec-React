@@ -1,18 +1,16 @@
-import './LogementCard.css'
-import './LogementFull.css'
-import LogementCard from './LogementCard';
-import LogementFull from './LogementFull';
+import LogementCard from './Card/LogementCard';
+import LogementFull from './Full/LogementFull';
 
-function Card ({id,title,cover,Logement,type}) {
-    return(
-        <div className='Cardwrapper'>
-          {type===1?(
-              <LogementCard id={id} cover={cover}title={title}/>
-              ):(
-                <LogementFull Logement={Logement}/>
-            )
-          }
-        </div> 
+function Card ({Logement,type}) {
+  return(
+    <div className='Cardwrapper'>
+      {type=== "Card" &&(
+        <LogementCard Logement={Logement}/>
+      )}
+      { type === "Full" &&(
+        <LogementFull Logement={Logement}/>
+      )}    
+    </div> 
   )
 }
 export default Card

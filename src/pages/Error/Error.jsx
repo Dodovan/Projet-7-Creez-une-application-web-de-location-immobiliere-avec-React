@@ -8,11 +8,8 @@ function Error () {
             <div className='Error__link'>
                 <Link to={`/`}> Retourner sur la page d'accueil</Link>
             </div>
-
         </div>
-      );
-
-  }
-  
-  export default Error
+    );
+}
+export default Error
 

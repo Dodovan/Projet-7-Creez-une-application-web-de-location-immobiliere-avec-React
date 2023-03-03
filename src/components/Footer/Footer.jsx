@@ -1,13 +1,11 @@
-
 import logo from '../../assets/logo_footer.png'
 import './Footer.css'
 
-function Footer({type}) {
-
+function Footer() {
     return (
         <footer>
             <div className='footer__logo'>
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo du site" />
             </div>
             <div className='footer__texte'>
                 © 2020 Kasa. All rights reserved
@@ -15,6 +13,5 @@ function Footer({type}) {
         </footer>
         
     )
-  }
-  
-  export default Footer
+}
+export default Footer

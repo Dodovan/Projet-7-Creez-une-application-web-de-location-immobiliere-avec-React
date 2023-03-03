@@ -1,4 +1,3 @@
-
 .Header{
     display: flex;
     justify-content: space-between;
@@ -10,27 +9,27 @@
     margin-bottom: 50px;
 }
 .navi{
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    width: 309px;
+}
+.nav__inactive{
     font-size: 24px;
     line-height: 142.6%;
     color: #FF6060;
-    width: 309px;
-    height: 34px;
+    text-decoration: none;
+    text-align: end;
+}
+.nav__active{
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #FF6060;
     display: flex;
     justify-content: space-between;
-    text-decoration: none;
+    text-decoration: underline;
 }
-.navi__About{
-    color: #FF6060;
-}
-.navi__Home{
-    color: #FF6060; 
-}
-@media all and (max-width:991px) and (min-width:769px)
-{
+
+@media all and (max-width:991px) and (min-width:769px){
     .Header{
         width: 90%;
         height: 47px;
@@ -40,11 +39,20 @@
         width: 150px;
         font-size: 17px;
         line-height: 17.11px;
-        /* text-align: right; */
         align-items: center;
         z-index: 10;
-
-
+    }
+    .nav__inactive{
+        font-size: 17px;
+        line-height: 17.11px;
+        align-items: center;
+        z-index: 10;
+    }
+    .nav__active{
+        font-size: 17px;
+        line-height: 17.11px;
+        align-items: center;
+        z-index: 10;
     }
     .Header img{
         width: 145px;
@@ -56,17 +64,28 @@
         width: 90%;
         height: 47px;
         margin-bottom: 10px;
+        margin-top: 20px;
     }
     .navi{
         z-index: 10;
-        width: 150px;
-        font-size: 17px;
+        width: 140px;
+        font-size: 12px;
         line-height: 17.11px;
         align-items: center;
-
-        /* text-align: right; */
-
-
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .nav__inactive{
+        font-size: 12px;
+        line-height: 17.11px;
+        align-items: center;
+        z-index: 10;
+    }
+    .nav__active{
+        font-size: 12px;
+        line-height: 17.11px;
+        align-items: center;
+        z-index: 10;
     }
     .Header img{
         width: 145px;
