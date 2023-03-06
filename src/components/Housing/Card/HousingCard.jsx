@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import './LogementCard.css'
+import './HousingCard.css'
 
-function LogementCard ({Logement}){
+function HousingCard ({Logement}){
     return(
     <div className="card">
         <Link to={`/logement/${Logement.id}`}>
@@ -12,4 +12,4 @@ function LogementCard ({Logement}){
     </div>
     )
 }
-export default LogementCard
+export default HousingCard

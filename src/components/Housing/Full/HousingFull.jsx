@@ -2,11 +2,11 @@ import Slideshow from "../../Slideshow/Slideshow"
 import star from '../../../assets/star.png'
 import emptyStar from '../../../assets/emptyStar.png'
 import Accordion from "../../Accordion/Accordion";
-import './LogementFull.css'
+import './HousingFull.css'
 
 
 
-function LogementFull ({Logement}){
+function HousingFull ({Logement}){
     const range = [1,2,3,4,5]
     const numberemptyStar = 5 - Logement.rating
     return(
@@ -49,4 +49,4 @@ function LogementFull ({Logement}){
         </div>
     )
 }
-export default LogementFull
+export default HousingFull

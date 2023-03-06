@@ -9,6 +9,9 @@ const Arrows = {
     nextArrow: <button ><svg width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458V72.3458Z" fill="white"/></svg></button>,
 
 }
+const properties = {
+    arrows: false
+}
 // indicateurs personalisé
 var Indicators = (scale) => {
     return (index) => (<div className="indicator">{index + 1}/{scale}</div>)
@@ -17,13 +20,24 @@ var Indicators = (scale) => {
 function Slideshow ({LogementPicture}) {
     return (
         <div>
-            <Slide {...Arrows} indicators={Indicators(LogementPicture.length)}>
-                {LogementPicture.map((picture)=> (
-                    <div className="each-slide" key={picture}>
-                        <img src={picture} alt="Visualisation du logement"/>
-                    </div>
-                ))}
-            </Slide>
+            {LogementPicture.length === 1 &&(
+                <Slide {...properties} indicators={Indicators(LogementPicture.length)}>
+                    {LogementPicture.map((picture)=> (
+                        <div className="each-slide" key={picture}>
+                            <img src={picture} alt="Visualisation du logement"/>
+                        </div>
+                    ))}
+                </Slide>
+            )}
+            {LogementPicture.length !== 1 &&(
+                <Slide {...Arrows} indicators={Indicators(LogementPicture.length)}>
+                    {LogementPicture.map((picture)=> (
+                        <div className="each-slide" key={picture}>
+                            <img src={picture} alt="Visualisation du logement"/>
+                        </div>
+                    ))}
+                </Slide>
+            )}                       
         </div>
     );
 };

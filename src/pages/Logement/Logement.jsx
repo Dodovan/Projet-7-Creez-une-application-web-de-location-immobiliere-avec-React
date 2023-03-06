@@ -1,6 +1,6 @@
 import logements from "../../data/logements"
 import { useParams } from 'react-router-dom'
-import Card from "../../components/Logement/Logement";
+import Housing from "../../components/Housing/Housing";
 import './Logement.css'
 import { useNavigate } from "react-router-dom";
 import React, { useEffect } from 'react';
@@ -27,7 +27,7 @@ function Logement ()  {
     if (idfound !== -1){
     return (
         <div className="pageLogement">
-            <Card type={"Full"} Logement={logements[idfound]}/>            
+            <Housing type={"Full"} Logement={logements[idfound]}/>            
         </div>
     );
     }
